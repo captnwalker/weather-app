@@ -1,0 +1,22 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "simple weather and google maps mashup built with node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/captnwalker/weather-app.git"
+  },
+  "author": "Steve Walker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/captnwalker/weather-app/issues"
+  },
+  "homepage": "https://github.com/captnwalker/weather-app#readme",
+  "dependencies": {
+    "request": "^2.73.0"
+  }
+}

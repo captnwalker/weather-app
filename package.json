@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/captnwalker/weather-app#readme",
   "dependencies": {
+    "chalk": "^2.4.1",
     "request": "^2.73.0",
     "yargs": "^4.8.1"
   }

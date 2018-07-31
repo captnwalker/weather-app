@@ -4,7 +4,7 @@
 
 ### Screenshot of this project
 
-![WeatherApp](https://raw.github.com/captnwalker/weather-app/master/img/screenshot.jpg "WeatherApp")
+![WeatherApp](https://raw.github.com/captnwalker/weather-app/master/img/screenshot.gif "WeatherApp")
 
 ### Tech Stack
 
@@ -14,6 +14,7 @@
 - Darksky Weather API
 - Request
 - Yargs
+- Chalk
 
 ### Steps to deploy this project locally
 

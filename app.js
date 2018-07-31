@@ -3,6 +3,8 @@ const yargs = require('yargs');
 const geocode = require('./geocode/geocode');
 const weather = require('./weather/weather');
 
+const chalk = require('chalk');
+
 const argv = yargs
 
   // Define Flags: -a = address || -h = help
@@ -22,12 +24,13 @@ geocode.geocodeAddress(argv.address, (errorMessage, results) => {
   if (errorMessage) {
     console.log(errorMessage);
   } else {
-    console.log(results.address);
+    console.log(chalk.redBright.bold(results.address));
+
     weather.getWeather(results.latitude, results.longitude, (errorMessage, weatherResults) => {
       if (errorMessage) {
         console.log(errorMessage);
       } else {
-        console.log(`It's currently ${weatherResults.temperature} F. It feels like ${weatherResults.apparentTemperature} F and the current conditions are ${weatherResults.summary} and wind speed is ${weatherResults.windSpeed} MPH`);
+        console.log(chalk.magenta.bold(`It's currently ${weatherResults.temperature} F. It feels like ${weatherResults.apparentTemperature} F and the current conditions are ${weatherResults.summary} with a wind speed of ${weatherResults.windSpeed} MPH.`));
       }
     });
   }

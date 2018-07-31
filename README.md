@@ -19,6 +19,7 @@
 
 1.  Clone this repo
 2.  Run `npm install` to re-build dependencies
-3.  In a new cli run `node app.js -a "[city or zip code]"`.
+3.  Available Flags: -a = address/city/zip_code || -h = help
+4.  From the root of the project, in a cli, run `node app.js -a "[city or zip code]"`
 
 #### Created July 2018, MIT

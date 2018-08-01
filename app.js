@@ -34,4 +34,6 @@ geocode.geocodeAddress(argv.address, (errorMessage, results) => {
       }
     });
   }
-});
+}, 4000);
+
+console.log(chalk.yellow('Loading weather info...'));

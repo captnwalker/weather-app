@@ -1,7 +1,9 @@
 const request = require('request');
 
+// Default location if nothing is entered after the `-a` flag
+var defaultAddress = "tierra del fuego";
 var geocodeAddress = (address, callback) => {
-  var encodedAddress = encodeURIComponent(address)
+  var encodedAddress = encodeURIComponent(address || defaultAddress)
 
   // Request to Google.Map.API
   request({
